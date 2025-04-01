@@ -13,57 +13,76 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutoLayout_iOS13" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="2c1-Jl-5o8">
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="2c1-Jl-5o8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                </accessibility>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="W8s-vi-4Xi">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="W8s-vi-4Xi">
                                 <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gv0-cF-MRh" userLabel="logoView">
-                                        <rect key="frame" x="9" y="0.0" width="396" height="270.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="270.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="fob-ve-FIA">
-                                                <rect key="frame" x="100" y="71.5" width="196" height="128"/>
+                                                <rect key="frame" x="109" y="71.5" width="196" height="128"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                </accessibility>
                                             </imageView>
                                         </subviews>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstItem="fob-ve-FIA" firstAttribute="centerY" secondItem="Gv0-cF-MRh" secondAttribute="centerY" id="CwG-7u-ICJ"/>
                                             <constraint firstItem="fob-ve-FIA" firstAttribute="centerX" secondItem="Gv0-cF-MRh" secondAttribute="centerX" id="WmB-11-U1S"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DnR-0o-Kbe" userLabel="diceView">
-                                        <rect key="frame" x="4.5" y="271.5" width="405" height="271"/>
+                                        <rect key="frame" x="0.0" y="271.5" width="414" height="271"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="TYe-nG-zuS">
-                                                <rect key="frame" x="77.5" y="85.5" width="250" height="100"/>
+                                                <rect key="frame" x="82" y="85.5" width="250" height="100"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceTwo" translatesAutoresizingMaskIntoConstraints="NO" id="m90-KJ-Ihg">
                                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                        </accessibility>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="byy-HO-8ji">
                                                         <rect key="frame" x="150" y="0.0" width="100" height="100"/>
+                                                        <accessibility key="accessibilityConfiguration">
+                                                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                                                        </accessibility>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstItem="TYe-nG-zuS" firstAttribute="centerY" secondItem="DnR-0o-Kbe" secondAttribute="centerY" id="dIg-Yv-nmf"/>
                                             <constraint firstItem="TYe-nG-zuS" firstAttribute="centerX" secondItem="DnR-0o-Kbe" secondAttribute="centerX" id="kcO-RC-87X"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YM0-qf-ONo" userLabel="buttonView">
-                                        <rect key="frame" x="3.5" y="543.5" width="407" height="270.5"/>
+                                    <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="YM0-qf-ONo" userLabel="buttonView">
+                                        <rect key="frame" x="0.0" y="543.5" width="414" height="270.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxF-Nc-wzy">
-                                                <rect key="frame" x="153.5" y="110" width="100" height="50"/>
+                                            <button opaque="NO" contentMode="scaleAspectFill" semanticContentAttribute="spatial" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxF-Nc-wzy">
+                                                <rect key="frame" x="157" y="110" width="100" height="50"/>
                                                 <color key="backgroundColor" red="0.90588235289999997" green="0.29803921570000003" blue="0.23529411759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="SW6-6a-cnr"/>
-                                                    <constraint firstAttribute="height" constant="50" id="vox-72-V7Y"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="b6C-pu-1bG"/>
+                                                    <constraint firstAttribute="height" constant="50" id="p3U-dg-X3A"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="Roll">
@@ -74,9 +93,12 @@
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
                                         <constraints>
-                                            <constraint firstItem="vxF-Nc-wzy" firstAttribute="centerY" secondItem="YM0-qf-ONo" secondAttribute="centerY" id="0AJ-lL-Ca5"/>
-                                            <constraint firstItem="vxF-Nc-wzy" firstAttribute="centerX" secondItem="YM0-qf-ONo" secondAttribute="centerX" id="CLs-le-Wsx"/>
+                                            <constraint firstItem="vxF-Nc-wzy" firstAttribute="centerX" secondItem="YM0-qf-ONo" secondAttribute="centerX" id="3k6-Af-MTJ"/>
+                                            <constraint firstItem="vxF-Nc-wzy" firstAttribute="centerY" secondItem="YM0-qf-ONo" secondAttribute="centerY" id="P7X-kG-awE"/>
                                         </constraints>
                                     </view>
                                 </subviews>
